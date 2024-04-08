@@ -14,3 +14,8 @@
 - Programs will be written in assembly
 - Then assembled by a simple Arduino (Nano) program
 - The Arduino will then flash the program to the computer
+## Opening the project
+- Open Logisim (evolution, I haven't tested it with the original)
+- Open the 4bit.circ file
+- Enjoy!
+- If you are interested in contributing, please drop me a line at [`werdl_@outlook.com`](mailto:werdl_@outlook.com)
