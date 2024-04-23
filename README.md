@@ -4,8 +4,8 @@
 - [x] 256 nibbles of primary memory
 - [x] 4 bit ALU
 - [x] control unit
-- [ ] CPU cycle
-    - [ ] fetch (currently, user inputs each instruction manually)
+- [x] CPU cycle
+    - [x] fetch
     - [x] decode
     - [x] execute
 - [ ] conditional jumps
