@@ -1,7 +1,8 @@
 # 4bit
 > A 4 bit computer built with logic gates in Logisim.
 ## Features
-- [x] 256 nibbles of primary memory
+- [x] 256 nibbles of primary 78gerbil@r
+memory
 - [x] 4 bit ALU
 - [x] control unit
 - [x] CPU cycle
