@@ -6,7 +6,7 @@
 - Program counter with jump and jump if zero instructions
 ## Instruction Set
 | Binary Value | Assembly Mnemonic | `A_ARG` value | `B_ARG` value | Operation Description | Implemented |
-|-             |-                  |-              |-              | -                     | - |
+|-             |-                  |-               |-              | -                     | -         |
 |`0000`| `ADD` | None | None | Adds reg 00 to reg 01 and stores in reg 10 | ✅ |
 |`0001`| `SUB` | None | None | Subtracts reg 01 from reg 00 and stores in reg 10 | ✅ |
 |`0010`| `REG` | 4 bit literal | 2 bit register address | Stores `A_ARG` in reg `B_ARG`| ✅ |
