@@ -25,7 +25,9 @@
 | `1111`| Reserved | - | - | -| ❌ |
 ### Notes on the instruction set
 - There are 4 "namespaces" (bitfields)
-| `Binary range` | `Use` | `\# uses`
+
+| `Binary range` | `Use` | `# uses`
+|-|-| - |
 | `0000` - `0011` | Arithmetic uses | 2 + `NOP`
 | `0100` - `0111` | Logical operations | 4
 | `1000` - `1011` | Memory manipulation operations | 3
