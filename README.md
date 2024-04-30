@@ -16,7 +16,7 @@
 |`0110`| `OR` | None | None | Performs logical OR on registers 00 and 01 and stores in reg 10 | ✅ |
 |`0111`| `AND` | None | None | Performs logical AND on registers 00 and 01 and stores in reg 10 | ✅ |
 |`1000`| `SAV` | 8 bit address | 4 bit literal | Saves `B_ARG` to memory address `B_ARG`| ✅ |
-|`1001`| `LDA` | 8 bit address | 2 bit register address | Loads memory address `A_ARG` to reg `B_ARG`| Partially |
+|`1001`| `LDA` | 8 bit address | 2 bit register address | Loads memory address `A_ARG` to reg `B_ARG`| ✅ |
 |`1010`| `WRIT` | 8 bit address | 2 bit register address | Saves reg `B_ARG` to memory address `A_ARG` | ✅ |
 | `1011`| Reserved | - | - | - | ❌ |
 | `1100`| `JMP` | 6 bit address | None | Jumps to PC address `A_ARG`| ❌ |
