@@ -19,7 +19,7 @@
 |`1001`| `LDA` | 8 bit address | 2 bit register address | Loads memory address `A_ARG` to reg `B_ARG`| ✅ |
 |`1010`| `WRIT` | 8 bit address | 2 bit register address | Saves reg `B_ARG` to memory address `A_ARG` | ✅ |
 | `1011`| Reserved | - | - | - | ❌ |
-| `1100`| `JMP` | 6 bit address | None | Jumps to PC address `A_ARG`| ❌ |
+| `1100`| `JMP` | 6 bit address | None | Jumps to PC address `A_ARG`| ✅ |
 | `1101`| `JZ` | 6 bit address | 2 bit register address | If `B_ARG` is zero, jumps to memory address `A_ARG`| ❌ |
 | `1101`| Reserved | - | - | -| ❌ |
 | `1111`| Reserved | - | - | -| ❌ |
