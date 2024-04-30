@@ -23,3 +23,10 @@
 | `1101`| `JZ` | 6 bit address | 2 bit register address | If `B_ARG` is zero, jumps to memory address `A_ARG`| ❌ |
 | `1101`| Reserved | - | - | -| ❌ |
 | `1111`| Reserved | - | - | -| ❌ |
+### Notes on the instruction set
+- There are 4 "namespaces" (bitfields)
+| `Binary range` | `Use` | `\# uses`
+| `0000` - `0011` | Arithmetic uses | 2 + `NOP`
+| `0100` - `0111` | Logical operations | 4
+| `1000` - `1011` | Memory manipulation operations | 3
+| `1100` - `1111` | Control flow operations | 2 (none implemented)
