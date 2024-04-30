@@ -32,3 +32,5 @@
 | `0100` - `0111` | Logical operations | 4
 | `1000` - `1011` | Memory manipulation operations | 3
 | `1100` - `1111` | Control flow operations | 2 (none implemented)
+
+- I think it is Turing-complete or near to it? I am pretty sure it is with manual instruction entry on the ALU/Memory Unit, but the PC I am less sure of
