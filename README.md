@@ -21,7 +21,7 @@
 | `1011`| Reserved | - | - | - | ❌ |
 | `1100`| `JMP` | 6 bit address | None | Jumps to PC address `A_ARG`| ✅ |
 | `1101`| `JZ` | 6 bit address | 2 bit register address | If `B_ARG` is zero, jumps to memory address `A_ARG`| ❌ |
-| `1110`| `JCU` | 6 bit address | 2 bit register address | If register `B_ARG` is equal to register 10, jumps to memory address `A_ARG` | ❌ |
+| `1110`| `JCU` | 6 bit address | 2 bit register address | If register `B_ARG` is equal to register 11, jumps to memory address `A_ARG` | ❌ |
 | `1111`| Reserved | - | - | -| ❌ |
 ### Notes on the instruction set
 - There are 4 "namespaces" (bitfields)
