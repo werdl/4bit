@@ -19,9 +19,9 @@
 |`1001`| `LDA` | 8 bit address | 2 bit register address | Loads memory address `A_ARG` to reg `B_ARG`| ✅ |
 |`1010`| `WRIT` | 8 bit address | 2 bit register address | Saves reg `B_ARG` to memory address `A_ARG` | ✅ |
 | `1011`| Reserved | - | - | - | ❌ |
-| `1100`| `JMP` | 6 bit address | None | Jumps to PC address `A_ARG`| ❌ |
+| `1100`| `JMP` | 6 bit address | None | Jumps to PC address `A_ARG`| ✅ |
 | `1101`| `JZ` | 6 bit address | 2 bit register address | If `B_ARG` is zero, jumps to memory address `A_ARG`| ❌ |
-| `1101`| Reserved | - | - | -| ❌ |
+| `1110`| `JCU` | 6 bit address | 2 bit register address | If register `B_ARG` is equal to register 11, jumps to memory address `A_ARG` | ❌ |
 | `1111`| Reserved | - | - | -| ❌ |
 ### Notes on the instruction set
 - There are 4 "namespaces" (bitfields)
@@ -31,6 +31,6 @@
 | `0000` - `0011` | Arithmetic uses | 2 + `NOP`
 | `0100` - `0111` | Logical operations | 4
 | `1000` - `1011` | Memory manipulation operations | 3
-| `1100` - `1111` | Control flow operations | 2 (none implemented)
+| `1100` - `1111` | Control flow operations | 3 (only 1 implemented)
 
 - I think it is Turing-complete or near to it? I am pretty sure it is with manual instruction entry on the ALU/Memory Unit, but the PC I am less sure of
