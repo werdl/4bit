@@ -8645,6 +8645,11 @@
       <a name="halign" val="left"/>
       <a name="text" val="EQUIVALENT"/>
     </comp>
+    <comp lib="5" loc="(2210,542)" name="Text">
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="left"/>
+      <a name="text" val="repalce with 747266"/>
+    </comp>
     <comp lib="5" loc="(360,25)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="halign" val="left"/>

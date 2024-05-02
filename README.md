@@ -34,3 +34,12 @@
 | `1100` - `1111` | Control flow operations | 3 (only 1 implemented)
 
 - I think it is Turing-complete or near to it? I am pretty sure it is with manual instruction entry on the ALU/Memory Unit, but the PC I am less sure of
+
+## Example Programs
+### A simple program that adds 1 to a number in memory address 0x00 and stores it in memory address 0x01
+```asm
+LDA 0x00 00 ; Load the number from memory address 0x00 into reg 00
+REG 1 01 ; Store the literal 1 in reg 01
+ADD ; Add reg 00 to reg 01 and store in reg 10
+WRIT 0x01 10 ; Write the result to memory address 0x01
+```
