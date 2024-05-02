@@ -21,7 +21,7 @@
 | `1011`| Reserved | - | - | - | ❌ |
 | `1100`| `JMP` | 6 bit address | None | Jumps to PC address `A_ARG`| ✅ |
 | `1101`| `JZ` | 6 bit address | 2 bit register address | If `B_ARG` is zero, jumps to memory address `A_ARG`| ❌ |
-| `1110`| `JCU` | 6 bit address | 2 bit register address | If register `B_ARG` is equal to register 11, jumps to memory address `A_ARG` | ✅ |
+| `1110`| `JCU` | 6 bit address | 2 bit register address | If register `B_ARG` is equal to register 11, jumps to memory address `A_ARG` | ❌ |
 | `1111`| Reserved | - | - | -| ❌ |
 ### Notes on the instruction set
 - There are 4 "namespaces" (bitfields)
@@ -43,3 +43,22 @@ REG 1 01 ; Store the literal 1 in reg 01
 ADD ; Add reg 00 to reg 01 and store in reg 10
 WRIT 0x01 10 ; Write the result to memory address 0x01
 ```
+
+## Circuitry
+> Fully designed in Logisim, using the built in TTL library and also [this library](https://github.com/r0the/logi7400). A few logic gates are included for more obscure ICs, but they will be replaced either with said ICs or with equivalent chips in series.
+### ALU/MU
+The ALU/MU is the heart of the computer, and is where all the computation is done. It is a 4-bit ALU, with 256 nibbles of general use memory. The ALU/MU is connected to the program counter, and is where the instructions are executed. The MU contains the registers and the memory.
+![ALU/MU](images/ALU-MU.png)
+### Program Counter
+The program counter is a simple counter that increments by one each clock cycle. It is connected to the ALU/MU, and is where the instructions are fetched from memory. The CLK input loads the current instruction into the ALU/MU, and the GO input executes the instruction. It is programmable, and can jump to any address in memory, using the `JMP` and `JCU` instructions.
+![Program Counter](images/PC.png)
+
+## Contributing or Building
+If you are interested in helping out, please first submit an issue, to check if your idea is in line with the project. If it is, feel free to fork the project and submit a pull request. If you are building the project, please let me know, I would love to see it! If any help is needed, feel free to ask, I would be happy to help. 
+
+Contact me (werdl) at [werdl_@outlook.com](mailto:werdl_@outlook.com).
+
+## Contributors
+- werdl (designing, building, programming and documenting the computer)
+- uimaxbai (building with me, hopefully!)
+- jdh and Ben Eater for inspiration
