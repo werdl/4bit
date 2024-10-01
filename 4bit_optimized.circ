@@ -36,7 +36,7 @@
       <a name="halign" val="left"/>
     </tool>
   </lib>
-  <lib desc="file#../../Downloads/logi7400dip.circ" name="6"/>
+  <lib desc="file#logi7400dip.circ" name="6"/>
   <main name="new_main"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -5979,10 +5979,6 @@
     </comp>
     <comp lib="0" loc="(1960,2480)" name="Splitter">
       <a name="appear" val="center"/>
-      <a name="bit0" val="3"/>
-      <a name="bit1" val="2"/>
-      <a name="bit2" val="1"/>
-      <a name="bit3" val="0"/>
       <a name="facing" val="west"/>
       <a name="fanout" val="4"/>
       <a name="incoming" val="4"/>
@@ -6392,7 +6388,7 @@
     <wire from="(1030,1300)" to="(1070,1300)"/>
     <wire from="(1030,1330)" to="(1030,1340)"/>
     <wire from="(1030,2570)" to="(1030,2800)"/>
-    <wire from="(1030,2570)" to="(1070,2570)"/>
+    <wire from="(1030,2570)" to="(1100,2570)"/>
     <wire from="(1030,2800)" to="(1150,2800)"/>
     <wire from="(1030,350)" to="(1030,470)"/>
     <wire from="(1030,580)" to="(1030,870)"/>
@@ -6414,8 +6410,6 @@
     <wire from="(1070,1380)" to="(1070,1420)"/>
     <wire from="(1070,2140)" to="(1070,2260)"/>
     <wire from="(1070,2140)" to="(1240,2140)"/>
-    <wire from="(1070,2570)" to="(1070,2700)"/>
-    <wire from="(1070,2570)" to="(1100,2570)"/>
     <wire from="(1070,2700)" to="(1090,2700)"/>
     <wire from="(1070,2770)" to="(1070,2850)"/>
     <wire from="(1070,3090)" to="(1070,3150)"/>
@@ -6437,6 +6431,7 @@
     <wire from="(1090,1390)" to="(1090,1400)"/>
     <wire from="(1090,1390)" to="(1130,1390)"/>
     <wire from="(1090,2700)" to="(1090,2710)"/>
+    <wire from="(1090,2710)" to="(1110,2710)"/>
     <wire from="(1090,2770)" to="(1090,2820)"/>
     <wire from="(1090,550)" to="(1090,890)"/>
     <wire from="(1090,550)" to="(1240,550)"/>
@@ -8640,12 +8635,12 @@
       <a name="halign" val="left"/>
       <a name="text" val="TWO HIGHEST BITS IGNORED"/>
     </comp>
-    <comp lib="5" loc="(2058,236)" name="Text">
+    <comp lib="5" loc="(2055,235)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="halign" val="left"/>
       <a name="text" val="EQUIVALENT"/>
     </comp>
-    <comp lib="5" loc="(2210,542)" name="Text">
+    <comp lib="5" loc="(2210,540)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="halign" val="left"/>
       <a name="text" val="repalce with 747266"/>
